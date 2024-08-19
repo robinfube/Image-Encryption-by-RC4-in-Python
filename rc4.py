@@ -57,7 +57,7 @@ def main():
 
     print("type encrypt for encryption or decrypt for decryption\n")
     action=input("Do you want to encrypt or decrypt the image?").strip().lower()
-    img_path=input("Enter the path of the image file:").strip()
+    img_path=input("Enter the path of the image file: ").strip()
 
     #key=input("Enter the custom key if you want").strip()
 
@@ -66,7 +66,7 @@ def main():
         result_img.save(f'encryptedimage{count}.png')
         count=count+1
         print(f"Image encryption successful and saved  as 'encrypted_image{count}.png'\n")
-        
+
     elif action == 'decrypt':
         result_img=imageEncrypt_Decrypt(img_path,key)
         result_img.save(f'decryptedimage{count}.png')
@@ -75,6 +75,7 @@ def main():
     else :
         print("Please enter appropriate command")
 
+"D:\CyberSecurity Intern\cat.png"
 
 if __name__=="__main__":
     main()
